@@ -1,0 +1,49 @@
+[
+    {
+        "type": "text",
+        "name": "firsName",
+        "placeholder": "Josue",
+        "label": "First Name",
+        "value": "",
+        "validations": [
+            {"type": "required", "msg": "Este campo es requerido"},
+            {"type": "min", "msg": "Debe poseer minimo de ", "value": 5 },
+            {"type": "max", "msg": "Debe poseer menos de ", "value": 15 }
+        ]
+    },
+    {
+        "type": "text",
+        "name": "lastName",
+        "placeholder": "Perez",
+        "label": "Last Name",
+        "value": "",
+        "validations": [
+            {"type": "required", "msg": "Este campo es requerido"}
+        ]
+    },
+    {
+        "type": "email",
+        "name": "email",
+        "placeholder": "nombre@correo.com",
+        "label": "Email",
+        "value": "",
+        "validations": [
+            {"type": "required", "msg": "Este campo es requerido"},
+            {"type": "email", "msg": "Debe ser un correo valido"}
+        ]
+    },
+    {
+        "type": "select",
+        "name": "favoriteGame",
+        "label": "favoriteGame",
+        "value": "",
+        "validations": [
+            {"type": "required", "msg": "Este campo es requerido"}
+        ],
+        "options": [
+            { "id": 1, "label": "Super Smash"},
+            { "id": 2, "label": "Metal Gear"},
+            { "id": 3, "label": "Resident Evil"}
+        ]
+    }
+]
